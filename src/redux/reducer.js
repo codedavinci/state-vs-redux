@@ -13,7 +13,7 @@ const todoReducer = (state = initialState, action) => {
     case "TODO_ADD":
       return {
         ...initialState,
-        todos: [...state.todos, ...addTodo(state).todos]
+        todos: [...addTodo(state).todos]
       };
     case "TODO_UPDATE":
       return {

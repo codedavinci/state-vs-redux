@@ -34,7 +34,7 @@ export const validateTodo = data => {
   };
 };
 
-export const addTodo = ({ todoValue, codeValue, todos }, b) => {
+export const addTodo = ({ todoValue, codeValue, todos }) => {
   let len = todos.length - 1;
   let newId = todos[len] ? todos[len].id + 1 : 0;
   const newTodo = { id: newId, todo: todoValue, code: codeValue };
